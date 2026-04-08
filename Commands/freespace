@@ -1,0 +1,2 @@
+Remove orphaned packages: sudo pacman -Rns $(pacman -Qtdq)
+Clear user cache: rm -rf ~/.cache/*
