@@ -1,0 +1,139 @@
+/* ===================================== */
+/*        GLASSARCH GTK4 - 1080p        */
+/*     Pixel aligned | Compact | 0.6    */
+/* ===================================== */
+
+@define-color bg_color rgba(22, 22, 28, 0.6);
+@define-color fg_color #e6e6e6;
+@define-color accent_color #7aa2f7;
+@define-color hover_color rgba(255,255,255,0.06);
+
+/* SAFE RESET */
+
+* {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* WINDOW */
+
+window {
+    background: @bg_color;
+    color: @fg_color;
+}
+
+/* HEADERBAR */
+/* 40px total height = perfect 1080p density */
+
+headerbar {
+    background: rgba(28,28,34,0.6);
+    min-height: 40px;
+    padding: 0 10px;
+}
+
+/* TITLE */
+
+headerbar label {
+    font-weight: 500;
+}
+
+/* BUTTONS */
+/* 28px height = ideal click target without bloat */
+
+button {
+    background: rgba(255,255,255,0.05);
+    min-height: 28px;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: @hover_color;
+}
+
+button:active {
+    background: @accent_color;
+    color: white;
+}
+
+/* FLAT / ICON BUTTONS */
+
+button.flat,
+button.image-button {
+    padding: 4px;
+    min-height: 26px;
+}
+
+/* ENTRIES */
+
+entry {
+    background: rgba(255,255,255,0.04);
+    min-height: 28px;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+/* LISTVIEW */
+/* 26px rows = pixel clean density */
+
+listview row {
+    min-height: 26px;
+    padding: 2px 8px;
+    border-radius: 6px;
+}
+
+listview row:hover {
+    background: @hover_color;
+}
+
+/* SIDEBAR (Files, Settings etc.) */
+
+.navigation-sidebar {
+    background: rgba(18,18,24,0.6);
+}
+
+.navigation-sidebar row {
+    min-height: 26px;
+    padding: 2px 8px;
+}
+
+/* NOTEBOOK TABS */
+
+tabbar tab {
+    min-height: 28px;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+tabbar tab:selected {
+    background: rgba(255,255,255,0.05);
+}
+
+/* POPOVER / MENUS */
+
+popover {
+    background: rgba(28,28,34,0.6);
+    border-radius: 8px;
+    padding: 4px;
+}
+
+popover menuitem {
+    min-height: 24px;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+popover menuitem:hover {
+    background: @hover_color;
+}
+
+/* SCROLLBAR */
+/* 6px width = modern clean look */
+
+scrollbar slider {
+    background: rgba(255,255,255,0.25);
+    min-width: 6px;
+    min-height: 6px;
+    border-radius: 6px;
+}

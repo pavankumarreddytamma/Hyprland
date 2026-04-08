@@ -1,0 +1,138 @@
+/* ============================= */
+/*      GLASSARCH - GTK3        */
+/*   Tuned for 1080p scale 1x   */
+/* ============================= */
+
+@define-color bg_color rgba(22, 22, 28, 0.6);
+@define-color fg_color #e6e6e6;
+@define-color accent_color #7aa2f7;
+@define-color hover_color rgba(255,255,255,0.06);
+@define-color border_color rgba(255,255,255,0.08);
+
+/* RESET (safe reset, not destructive) */
+
+* {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* WINDOW */
+
+window,
+.background {
+    background-color: @bg_color;
+    color: @fg_color;
+}
+
+/* HEADERBAR */
+
+headerbar {
+    background-color: rgba(30, 30, 36, 0.6);
+    min-height: 38px;
+    padding: 4px 10px;
+}
+
+/* TITLE */
+
+headerbar .title {
+    font-weight: 500;
+}
+
+/* BUTTONS */
+
+button {
+    background-color: rgba(255,255,255,0.05);
+    padding: 4px 10px;
+    border-radius: 6px;
+    min-height: 28px;
+}
+
+button:hover {
+    background-color: @hover_color;
+}
+
+button:active {
+    background-color: @accent_color;
+    color: #ffffff;
+}
+
+/* ENTRY */
+
+entry {
+    background-color: rgba(255,255,255,0.04);
+    padding: 4px 8px;
+    border-radius: 6px;
+    min-height: 28px;
+}
+
+/* NOTEBOOK TABS */
+
+notebook tab {
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+notebook tab:checked {
+    background-color: rgba(255,255,255,0.05);
+}
+
+/* LISTS / TREEVIEW */
+
+treeview,
+.view {
+    background-color: transparent;
+}
+
+.view row {
+    padding: 4px 8px;
+    min-height: 26px;
+}
+
+.view row:hover {
+    background-color: @hover_color;
+}
+
+/* SIDEBAR (File managers etc.) */
+
+.sidebar {
+    background-color: rgba(18,18,24,0.6);
+}
+
+.sidebar row {
+    padding: 4px 8px;
+    min-height: 26px;
+}
+
+/* MENUS */
+
+menu,
+.menu,
+popover {
+    background-color: rgba(30, 30, 36, 0.6);
+    border-radius: 8px;
+    padding: 4px;
+}
+
+menuitem {
+    padding: 4px 10px;
+    min-height: 24px;
+    border-radius: 6px;
+}
+
+menuitem:hover {
+    background-color: @hover_color;
+}
+
+/* SCROLLBAR */
+
+scrollbar {
+    background: transparent;
+}
+
+scrollbar slider {
+    background-color: rgba(255,255,255,0.25);
+    border-radius: 6px;
+    min-width: 6px;
+    min-height: 6px;
+}
