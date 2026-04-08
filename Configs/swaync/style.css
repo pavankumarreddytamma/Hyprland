@@ -1,0 +1,92 @@
+/* ===== Global ===== */
+* {
+    font-family: "JetBrainsMono Nerd Font", "Inter", sans-serif;
+    font-size: 14px;
+}
+
+/* ===== Notification Window ===== */
+.notification {
+    background: rgba(10, 10, 140, 0.188);
+    border-radius: 18px;
+    padding: 14px;
+    margin: 8px;
+    border: 2px solid rgb(94, 45, 252);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    transition: all 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.notification:hover {
+    background: rgba(49, 50, 68, 0.95);
+    border: 1px solid rgba(137, 180, 250, 0.6);
+}
+
+/* App Name */
+.notification .app-name {
+    font-weight: bold;
+    color: #89b4fa;
+}
+
+/* Summary (Title) */
+.notification .summary {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Body Text */
+.notification .body {
+    color: #cdd6f4;
+    margin-top: 4px;
+}
+
+/* Close Button */
+.notification .close-button {
+    background: transparent;
+    color: #f38ba8;
+    border-radius: 50%;
+}
+
+.notification .close-button:hover {
+    background: rgba(243, 139, 168, 0.2);
+}
+
+/* ===== Control Center ===== */
+.control-center {
+    background: rgba(0, 0, 113, 0.95);
+    border-radius: 22px;
+    border: 2px solid rgba(255, 255, 255, 0.06);
+    padding: 18px;
+}
+
+/* Control Center Header */
+.control-center .widget-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #89b4fa;
+}
+
+/* Buttons */
+.control-center button {
+    background: rgba(49, 50, 68, 0.8);
+    border-radius: 14px;
+    padding: 8px 12px;
+    color: #cdd6f4;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.control-center button:hover {
+    background: rgba(137, 180, 250, 0.2);
+    border: 1px solid #89b4fa;
+}
+
+/* Scrollbar */
+.control-center scrollbar {
+    background: transparent;
+}
+
+.control-center scrollbar slider {
+    background: rgba(137, 180, 250, 0.5);
+    border-radius: 10px;
+}

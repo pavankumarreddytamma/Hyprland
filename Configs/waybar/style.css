@@ -1,0 +1,131 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    font-weight: 700;
+    font-style: initial;
+    min-height: 0px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+window#waybar {
+    background: transparent; 
+    color: white;
+    transition-property: background-color;
+    transition-duration: .5s;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 0px;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modules-left, .modules-center, .modules-right {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+
+#cpu, #custom-gpu, #memory, #temperature, 
+#clock, #battery, #network, #pulseaudio, #backlight, #bluetooth  {
+    padding: 0 10px;
+    margin: 4px;
+    background-color: black;
+    border-radius: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#window {
+    padding-left: 12px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 6px;
+    margin-bottom: 4px;
+    background-color: transparent;
+    border-radius: 8px;
+    margin-top: 6px;
+    margin-bottom: 4px;
+ }
+ 
+#workspaces button {
+  min-width: 24px;
+  min-height: 0px;
+  color: white;
+ padding-top: 0px;
+ padding-bottom: 0px;
+ padding-left: 0px;
+ padding-right: 0px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 0px;
+    font-size: medium;
+  background: transparent;
+  border-radius: 8px;
+  border: 2px solid transparent;
+
+  transition: all 0.25s ease-in-out;
+}
+
+
+#workspaces button.active {
+  min-width: 40px;
+  background: rgba(121, 121, 121, 0.15);
+  padding-right: 0px;
+  border: 2px solid rgba(154,56,248,0.2);
+
+
+}
+
+#workspaces button:hover {
+  background: yellow;
+}
+
+
+#workspaces button.urgent {
+  background: red;
+}
+
+#clock {
+    font-weight: bold;
+}
+
+#battery.charging {
+    color: yellow;
+}
+
+#battery.warning:not(.charging) {
+    color: #fab387;
+}
+
+#battery.critical:not(.charging) {
+    color: red;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#custom-power {
+    min-width: 16px;
+    padding-right: 6px;
+    padding-left: 3px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    margin-top: 4px;
+    background-color: black;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes pulse {
+        from { background-color: #f38ba8; }
+        to   { box-shadow: 0 0 14px #ef4444; }
+}
