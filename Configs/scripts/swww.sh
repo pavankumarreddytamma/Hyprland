@@ -14,4 +14,4 @@ fi
 
 # 3. Set the wallpaper
 #notify-send "Wallpaper changed"
-swww img "$RANDOM_PIC" --transition-type grow --transition-duration 3
+awww img "$RANDOM_PIC" --transition-type grow --transition-duration 3
