@@ -1,2 +1,11 @@
 Remove orphaned packages: sudo pacman -Rns $(pacman -Qtdq)
 Clear user cache: rm -rf ~/.cache/*
+
+increase swap of 12gb to fix crashes of games and application 
+sudo btrfs subvolume create /swap
+sudo chattr +C /swap
+sudo fallocate -l 12G /swap/swapfile
+sudo chmod 600 /swap/swapfile
+sudo mkswap /swap/swapfile
+sudo swapon /swap/swapfile
+echo '/swap/swapfile none swap defaults 0 0' | sudo tee -a /etc/fstab
