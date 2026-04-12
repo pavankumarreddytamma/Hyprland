@@ -6,10 +6,10 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     "height": 40,
-    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-left": ["hyprland/workspaces", "temperature", "cpu", "custom/gpu", "memory", "hyprland/window"],
     "modules-center": ["clock"],
     "modules-right": [
-         "cpu", "temperature", "custom/gpu", "memory", "battery", "pulseaudio", "backlight", "network", "bluetooth", "custom/power"
+          "battery", "pulseaudio", "backlight", "network", "bluetooth", "custom/power"
     ],
 
     "hyprland/workspaces": {
@@ -42,7 +42,7 @@
         //"interval": 10,
         //"on-click": "kitty -e nvtop",
         //"tooltip": false
-    //},
+   // },
 
     "memory": {
         "interval": 30,
@@ -62,7 +62,7 @@
     },
 
     "clock": {
-        "format": "{:%I:%M %p   %d/%m/%y}",
+        "format": "{:%I:%M %p   %d/%m/%y|%A}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
 
