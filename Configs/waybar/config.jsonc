@@ -1,16 +1,17 @@
 {
     "layer": "top",
     "position": "top",
-    "mod": "dock",
-    "exclusive": true,
-    "passthrough": false,
-    "gtk-layer-shell": true,
-    "height": 40,
+    "height": 32,
+    "margin-left": 2,
+    "margin-right": 2,
+    "margin-top": 4,
+
+
+
+
     "modules-left": ["hyprland/workspaces", "temperature", "cpu", "custom/gpu", "memory", "hyprland/window"],
     "modules-center": ["clock"],
-    "modules-right": [
-          "battery", "pulseaudio", "backlight", "network", "bluetooth", "custom/power"
-    ],
+    "modules-right": ["battery", "pulseaudio", "backlight", "network", "bluetooth", "custom/power"],
 
     "hyprland/workspaces": {
     "disable-scroll": true,
@@ -62,7 +63,7 @@
     },
 
     "clock": {
-        "format": "{:%I:%M %p   %d/%m/%y|%A}",
+        "format": "{:%I:%M %p | %d/%m/%y | %A}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
 
@@ -73,8 +74,7 @@
     },
     "format": "{icon} {capacity}%",
     "format-charging": "⚡ {capacity}%",
-    "format-alt": "{icon} {time}",
-    "format-icons": ["🪫", "🔋"],
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "tooltip-format": "{capacity}% - {timeTo}"
 },
 
@@ -92,7 +92,8 @@
             "default": ["🔈", "🔉", "🔊",],
             "headphone": "🎧"
         },
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol",
+        "tootltip": false,
     },
 
     "backlight": {
@@ -110,5 +111,6 @@
     "custom/power": {
         "format": "⏻",
         "on-click": "wlogout",
+        "tooltip": false
     }
 }

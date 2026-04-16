@@ -24,7 +24,7 @@ window {
     y-offset:         0px;
     border:           2px;
     border-color:     #ffffff;
-    border-radius:    20px;
+    border-radius:    12px;
     background-color: @bg;
     padding: 4px;
 }
