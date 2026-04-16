@@ -13,12 +13,13 @@ window#waybar {
 #workspaces button {
   padding: 6px;
   color: #e4e6ed;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 
 #workspaces button.active {
-  background-color: rgb(33, 55, 88);
+  background-color: transparent;
   color: #e4e6ed;
+  border-bottom: 2px solid #e4e6ed;
 }
 
 #workspaces button.occupied {
