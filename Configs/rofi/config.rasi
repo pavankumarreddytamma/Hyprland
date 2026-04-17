@@ -9,10 +9,10 @@ configuration {
 @theme "/dev/null"
 
 * {
-    bg:          #262626; /* Deep blue glass */
+    bg:          #51050527; /* Deep blue glass */
     bg-sel:      #1d3557;   /* Selection blue */
     fg:          #e6f1ff;   /* White text */
-    accent:      #64ffda;   /* Teal accent */
+    accent:      #ffffffaa;   /* Teal accent */
     
     background-color: transparent;
     font: "JetBrainsMono Nerd Font 10";
@@ -23,7 +23,7 @@ window {
     x-offset:         0px;
     y-offset:         0px;
     border:           2px;
-    border-color:     #ffffff;
+    border-color:     #ff0c0c1c;
     border-radius:    12px;
     background-color: @bg;
     padding: 4px;
@@ -32,13 +32,13 @@ window {
 mainbox {
     spacing:          0px;
     children:         [ inputbar, listview ];
-    background-color: #010101;
+    background-color: @bg;
 }
 
 inputbar {
     margin:           14px;
-    padding:          10px;
-    background-color: #353535db;
+    padding:          8px 10px 10px 10px;
+    background-color: #a70a0a33;
     border-radius:    12px;
     children:         [ prompt,entry ];
 }
@@ -49,9 +49,9 @@ prompt {
 }
 
 entry {
-    text-color:       @fg;
+    text-color:       @accent;
     placeholder:      "Search Apps...";
-    placeholder-color: #8892b0;
+    placeholder-color: @accent;
 }
 
 listview {
@@ -67,7 +67,7 @@ element {
 }
 
 element selected {
-    background-color: #ffffff38;
+    background-color: #fe3e3e50;
     text-color:       @accent;
 }
 
