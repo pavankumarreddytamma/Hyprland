@@ -1,0 +1,115 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Iosevka Nerd Font";
+    font-size: 14px;
+    font-weight: 600;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+
+#workspaces button {
+    background: transparent;
+    color: rgb(143, 140, 140);
+    border-radius: 8px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+#workspaces button.urgent {
+    background: red;
+    color: rgb(225, 215, 215);
+}
+
+#workspaces button.active {
+    background: rgb(55, 46, 46);
+    border: green;
+    color: rgb(225, 215, 215);
+}
+
+#clock {
+    background: rgb(55, 46, 46);
+    color: rgb(225, 215, 215);
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 8px;
+}
+
+#battery {
+    color: rgb(225, 215, 215);
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#battery.critical {
+    color: red;
+}
+
+#network {
+    color: rgb(225, 215, 215);
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+
+#pulseaudio {
+    color: rgb(225, 215, 215);
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#backlight {
+    color: rgb(225, 215, 215);
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#info {
+    background: rgb(55, 46, 46);
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+#utils {
+    background: rgb(55, 46, 46);
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+}
+
+#cpu {
+    color: rgb(225, 215, 215);
+    margin-left: 8px;
+    margin-right: 8px;  
+}
+
+#temperature {
+    color: rgb(225, 215, 215);
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#memory {
+    color: rgb(225, 215, 215);
+    background: rgb(55, 46, 46);
+    margin-left: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+}
+
+#cpubar {
+    background: rgb(55, 46, 46);
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+    margin-left: 8px;
+}
