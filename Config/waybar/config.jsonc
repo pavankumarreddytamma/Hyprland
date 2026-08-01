@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "modules-left": ["hyprland/workspaces", "group/cpubar", "memory"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["group/info", "group/utils"],
     "margin-left": 12,

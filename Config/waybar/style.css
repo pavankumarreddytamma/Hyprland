@@ -26,13 +26,13 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background: rgb(55, 46, 46);
+    background: rgb(69, 56, 56);
     border: green;
     color: rgb(225, 215, 215);
 }
 
 #clock {
-    background: rgb(55, 46, 46);
+    background: rgb(69, 56, 56);
     color: rgb(225, 215, 215);
     margin-left: 8px;
     margin-right: 8px;
@@ -71,7 +71,7 @@ window#waybar {
 }
 
 #info {
-    background: rgb(55, 46, 46);
+    background: rgb(69, 56, 56);
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 8px;
@@ -79,7 +79,7 @@ window#waybar {
 }
 
 #utils {
-    background: rgb(55, 46, 46);
+    background: rgb(69, 56, 56);
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 8px;
@@ -99,7 +99,7 @@ window#waybar {
 
 #memory {
     color: rgb(225, 215, 215);
-    background: rgb(55, 46, 46);
+    background: rgb(69, 56, 56);
     margin-left: 8px;
     padding-left: 8px;
     padding-right: 8px;
@@ -107,7 +107,7 @@ window#waybar {
 }
 
 #cpubar {
-    background: rgb(55, 46, 46);
+    background: rgb(69, 56, 56);
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 8px;
