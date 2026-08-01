@@ -30,6 +30,7 @@ hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(broswer))
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("/home/pavan/Scripts/awww.sh"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd("hyprshot -m region"))
+hl.bind(mainMod .. " + A", hl.dsp.exec_cmd("brave"))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
