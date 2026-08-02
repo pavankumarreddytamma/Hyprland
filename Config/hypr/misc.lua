@@ -9,7 +9,7 @@ hl.config({
         vrr = false
     },
     debug = {
-        vfr = false,
+        vfr = true,
         overlay = false
     },
     render = {
